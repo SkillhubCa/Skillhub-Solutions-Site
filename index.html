@@ -7,11 +7,11 @@
     <style>
         /* Color Palette and Variables */
         :root {
-            --primary-blue: #1880e6; 
-            --secondary-blue: #0edcff; 
+            --primary-blue: hsl(217, 82%, 46%); /* From Screenshot 1 */
+            --secondary-blue: hsl(191, 100%, 36%); /* From Screenshot 2 */
             --bg-color: #fcfdff; 
             --text-color: #333333; 
-            --hero-bg-overlay: rgba(24, 128, 230, 0.85); 
+            --hero-bg-overlay: hsla(217, 82%, 46%, 0.85); /* Updated to match primary */
             --accent-light: #ffffff; 
         }
 
@@ -132,7 +132,6 @@
             margin-bottom: 50px;
         }
 
-        /* UPDATED: Section Headers are now dark gray */
         .section-header h2 {
             font-size: 2.8em;
             color: var(--text-color); 
@@ -178,7 +177,7 @@
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(24, 128, 230, 0.15);
+            box-shadow: 0 10px 20px rgba(26, 92, 191, 0.15); /* Tinted shadow to match new primary */
         }
 
         /* Feature Box Titles */
@@ -195,7 +194,6 @@
             color: var(--accent-light);
         }
 
-        /* Ensures the Contact Us header stays white on the blue background */
         .contact .section-header h2 {
             color: var(--accent-light);
         }
@@ -264,7 +262,7 @@
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: var(--secondary-blue);
-            box-shadow: 0 0 5px rgba(14, 220, 255, 0.3);
+            box-shadow: 0 0 5px hsla(191, 100%, 36%, 0.3);
         }
 
         .btn {
@@ -288,7 +286,7 @@
 
         /* Footer */
         footer {
-            background-color: #1265b5; 
+            background-color: hsl(217, 82%, 26%); /* Darker shade of the new primary blue */
             color: rgba(255, 255, 255, 0.8);
             padding: 20px 0;
             text-align: center;

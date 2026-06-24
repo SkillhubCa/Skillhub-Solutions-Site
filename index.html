@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillhub Solutions - Empowering People</title>
     <style>
-        /* Color Palette and Variables (derived from provided images) */
+        /* UPDATED: Color Palette and Variables */
         :root {
-            --primary-blue: #0A326F; /* Dark Blue from text and large graphic */
-            --secondary-blue: #0088CC; /* Medium Blue from logo gradient */
-            --light-cyan: #33C6FF; /* Sky Blue/Cyan from highlights and logo gradient */
-            --bg-color: #fcfdff; /* Off-white for background clarity */
-            --text-color: #333333; /* Dark Grey for standard text */
-            --hero-bg-overlay: rgba(10, 50, 111, 0.7); /* Translucent dark blue for hero */
-            --accent-light: #ffffff; /* White accents */
+            --primary-blue: #0d5de0; /* New Primary Color */
+            --secondary-blue: #00b8d9; /* New Secondary Color */
+            --light-cyan: #4ddbff; /* Adjusted to blend with new secondary */
+            --bg-color: #fcfdff; 
+            --text-color: #333333; 
+            --hero-bg-overlay: rgba(13, 93, 224, 0.8); /* Updated to match new primary */
+            --accent-light: #ffffff; 
         }
 
         /* Basic Reset */
@@ -29,7 +29,7 @@
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
-            scroll-behavior: smooth; /* Smooth scrolling between sections */
+            scroll-behavior: smooth; 
         }
 
         /* Layout Container */
@@ -45,7 +45,7 @@
             background-color: var(--accent-light);
             border-bottom: 2px solid #eaeaea;
             padding: 15px 0;
-            position: fixed; /* Fixed position so it sticks to top */
+            position: fixed; 
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -63,7 +63,7 @@
         }
 
         .logo img {
-            max-height: 60px; /* Adjust logo size */
+            max-height: 60px; 
             width: auto;
         }
 
@@ -82,13 +82,12 @@
         }
 
         nav a:hover {
-            color: var(--light-cyan);
+            color: var(--secondary-blue);
         }
 
         /* Hero Section (Main Image and Tagline) */
         .hero {
-            height: 100vh; /* Full viewport height */
-            /* UPDATED: Background image URL changed to hero.png */
+            height: 100vh; 
             background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url('hero.png');
             background-size: cover;
             background-position: center;
@@ -98,7 +97,7 @@
             justify-content: center;
             text-align: center;
             color: var(--accent-light);
-            margin-top: 80px; /* Offset for fixed header */
+            margin-top: 80px; 
         }
 
         .hero-content {
@@ -145,7 +144,7 @@
         .accent-line {
             height: 4px;
             width: 80px;
-            background: linear-gradient(to right, var(--secondary-blue), var(--light-cyan));
+            background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
             margin: 0 auto;
             border-radius: 2px;
         }
@@ -159,7 +158,7 @@
 
         .about-content p {
             margin-bottom: 30px;
-            color: var(--primary-blue);
+            color: var(--text-color);
         }
 
         .about-features {
@@ -179,7 +178,7 @@
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(10, 50, 111, 0.1);
+            box-shadow: 0 10px 20px rgba(13, 93, 224, 0.15);
         }
 
         .feature-box h3 {
@@ -200,7 +199,7 @@
         }
 
         .contact .accent-line {
-            background: linear-gradient(to right, var(--light-cyan), var(--accent-light));
+            background: linear-gradient(to right, var(--secondary-blue), var(--accent-light));
         }
 
         .contact-content {
@@ -215,7 +214,7 @@
         }
 
         .contact-info h3 {
-            color: var(--light-cyan);
+            color: var(--secondary-blue);
             font-size: 1.4em;
             margin-bottom: 20px;
         }
@@ -226,13 +225,12 @@
             margin-bottom: 15px;
         }
 
-        /* Placeholder icon style */
         .contact-item i {
             display: inline-block;
             width: 30px;
             text-align: center;
             margin-right: 15px;
-            color: var(--light-cyan);
+            color: var(--secondary-blue);
         }
 
         .contact-form {
@@ -240,6 +238,7 @@
             color: var(--primary-blue);
             padding: 30px;
             border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         .form-group {
@@ -260,28 +259,35 @@
             font-family: inherit;
         }
 
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-blue);
+            box-shadow: 0 0 5px rgba(0, 184, 217, 0.3);
+        }
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
-            background: linear-gradient(135deg, var(--secondary-blue), var(--light-cyan));
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
             color: var(--accent-light);
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
             text-transform: uppercase;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease, transform 0.2s ease;
             border: none;
             cursor: pointer;
         }
 
         .btn:hover {
             opacity: 0.9;
+            transform: translateY(-2px);
         }
 
         /* Footer */
         footer {
-            background-color: #051A3A;
-            color: rgba(255, 255, 255, 0.7);
+            background-color: #083c94; /* Darker shade of the primary blue */
+            color: rgba(255, 255, 255, 0.8);
             padding: 20px 0;
             text-align: center;
             font-size: 0.9em;

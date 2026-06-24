@@ -7,11 +7,11 @@
     <style>
         /* Color Palette and Variables */
         :root {
-            --primary-blue: hsl(217, 82%, 46%); /* From Screenshot 1 */
-            --secondary-blue: hsl(191, 100%, 36%); /* From Screenshot 2 */
+            --primary-blue: hsl(217, 82%, 46%); 
+            --secondary-blue: hsl(191, 100%, 36%); 
             --bg-color: #fcfdff; 
             --text-color: #333333; 
-            --hero-bg-overlay: hsla(217, 82%, 46%, 0.85); /* Updated to match primary */
+            --hero-bg-overlay: hsla(217, 82%, 46%, 0.85); 
             --accent-light: #ffffff; 
         }
 
@@ -120,13 +120,7 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
-        /* About Us Section */
-        .about {
-            padding: 100px 0;
-            background-color: var(--accent-light);
-            border-bottom: 1px solid #eaeaea;
-        }
-
+        /* Section Headers (Shared) */
         .section-header {
             text-align: center;
             margin-bottom: 50px;
@@ -146,6 +140,13 @@
             background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
             margin: 0 auto;
             border-radius: 2px;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 100px 0;
+            background-color: var(--accent-light);
+            border-bottom: 1px solid #eaeaea;
         }
 
         .about-content {
@@ -177,14 +178,55 @@
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(26, 92, 191, 0.15); /* Tinted shadow to match new primary */
+            box-shadow: 0 10px 20px rgba(26, 92, 191, 0.15); 
         }
 
-        /* Feature Box Titles */
         .feature-box h3 {
             color: var(--text-color);
             font-size: 1.4em;
             margin-bottom: 15px;
+        }
+
+        /* Platforms / Products Section */
+        .platforms {
+            padding: 100px 0;
+            background-color: var(--bg-color);
+        }
+
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .platform-card {
+            background-color: var(--accent-light);
+            padding: 40px 30px;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(26, 92, 191, 0.15);
+        }
+
+        .platform-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .platform-card p {
+            margin-bottom: 30px;
+            color: var(--text-color);
         }
 
         /* Contact Section */
@@ -265,6 +307,7 @@
             box-shadow: 0 0 5px hsla(191, 100%, 36%, 0.3);
         }
 
+        /* Buttons */
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -286,7 +329,7 @@
 
         /* Footer */
         footer {
-            background-color: hsl(217, 82%, 26%); /* Darker shade of the new primary blue */
+            background-color: hsl(217, 82%, 26%); 
             color: rgba(255, 255, 255, 0.8);
             padding: 20px 0;
             text-align: center;
@@ -304,10 +347,7 @@
             .hero p {
                 font-size: 1.2em;
             }
-            .about {
-                padding: 60px 0;
-            }
-            .contact {
+            .about, .platforms, .contact {
                 padding: 60px 0;
             }
             .header-content {
@@ -332,6 +372,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -368,6 +409,30 @@
                         <p>Our mission is to empower individuals to thrive in their professional journey.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Platforms</h2>
+                <div class="accent-line"></div>
+            </div>
+            <div class="platforms-grid">
+                
+                <div class="platform-card">
+                    <h3>Skillhub</h3>
+                    <p>A comprehensive platform designed for skill development and connecting talent with professional opportunities.</p>
+                    <a href="https://www.skillhub.ca/" target="_blank" rel="noopener noreferrer" class="btn">Explore Skillhub</a>
+                </div>
+
+                <div class="platform-card">
+                    <h3>Questin</h3>
+                    <p>Innovative solutions to discover new avenues for professional growth and career discovery.</p>
+                    <a href="https://questin.io/" target="_blank" rel="noopener noreferrer" class="btn">Explore Questin</a>
+                </div>
+
             </div>
         </div>
     </section>

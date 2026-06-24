@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillhub Solutions - Empowering People</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
     <style>
         /* Color Palette and Variables */
         :root {
@@ -86,7 +89,6 @@
         /* CSS-Only Hero Section */
         .hero {
             height: 100vh; 
-            /* Modern, deep gradient using your exact brand colors */
             background: linear-gradient(135deg, hsl(217, 82%, 15%) 0%, var(--primary-blue) 60%, var(--secondary-blue) 100%);
             display: flex;
             align-items: center;
@@ -130,13 +132,15 @@
             max-width: 800px;
         }
 
+        /* UPDATED: Ultra-Bold Hero Title */
         .hero h1 {
-            font-size: 3.8em;
-            font-weight: 800;
+            font-family: 'Montserrat', 'Arial Black', sans-serif;
+            font-size: 4.5em; 
+            font-weight: 900;
             margin-bottom: 20px;
             color: var(--accent-light);
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-            letter-spacing: 1px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
+            letter-spacing: 2px;
         }
 
         .hero p {
@@ -366,7 +370,7 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5em;
+                font-size: 2.8em;
             }
             .section-header h2 {
                 font-size: 2.2em;

@@ -7,12 +7,11 @@
     <style>
         /* UPDATED: Color Palette and Variables */
         :root {
-            --primary-blue: #0d5de0; /* New Primary Color */
-            --secondary-blue: #00b8d9; /* New Secondary Color */
-            --light-cyan: #4ddbff; /* Adjusted to blend with new secondary */
+            --primary-blue: #1880e6; /* New Primary Color */
+            --secondary-blue: #0edcff; /* New Secondary Color */
             --bg-color: #fcfdff; 
             --text-color: #333333; 
-            --hero-bg-overlay: rgba(13, 93, 224, 0.8); /* Updated to match new primary */
+            --hero-bg-overlay: rgba(24, 128, 230, 0.85); /* Updated overlay */
             --accent-light: #ffffff; 
         }
 
@@ -85,7 +84,7 @@
             color: var(--secondary-blue);
         }
 
-        /* Hero Section (Main Image and Tagline) */
+        /* Hero Section */
         .hero {
             height: 100vh; 
             background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url('hero.png');
@@ -178,11 +177,11 @@
 
         .feature-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(13, 93, 224, 0.15);
+            box-shadow: 0 10px 20px rgba(24, 128, 230, 0.15);
         }
 
         .feature-box h3 {
-            color: var(--secondary-blue);
+            color: var(--primary-blue);
             font-size: 1.4em;
             margin-bottom: 15px;
         }
@@ -262,7 +261,7 @@
         .form-group input:focus, .form-group textarea:focus {
             outline: none;
             border-color: var(--secondary-blue);
-            box-shadow: 0 0 5px rgba(0, 184, 217, 0.3);
+            box-shadow: 0 0 5px rgba(14, 220, 255, 0.3);
         }
 
         .btn {
@@ -286,7 +285,7 @@
 
         /* Footer */
         footer {
-            background-color: #083c94; /* Darker shade of the primary blue */
+            background-color: #1265b5; /* Darker version of primary */
             color: rgba(255, 255, 255, 0.8);
             padding: 20px 0;
             text-align: center;

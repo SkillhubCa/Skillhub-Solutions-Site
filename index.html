@@ -101,7 +101,6 @@
             z-index: 1;
         }
 
-        /* Abstract glowing orb top-left */
         .hero::before {
             content: '';
             position: absolute;
@@ -114,7 +113,6 @@
             z-index: -1;
         }
 
-        /* Abstract glowing orb bottom-right */
         .hero::after {
             content: '';
             position: absolute;
@@ -130,7 +128,6 @@
         .hero-content {
             padding: 20px;
             max-width: 800px;
-            /* UPDATED: Shifts the text block up by 30 pixels */
             transform: translateY(-30px);
         }
 
@@ -308,6 +305,17 @@
             color: var(--secondary-blue);
         }
 
+        /* Added styling for links in the contact section */
+        .contact-item a {
+            color: var(--accent-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--secondary-blue);
+        }
+
         .contact-form {
             background-color: var(--accent-light);
             color: var(--primary-blue);
@@ -367,6 +375,15 @@
             padding: 20px 0;
             text-align: center;
             font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* Mobile Responsiveness */
@@ -484,6 +501,7 @@
                     <div class="contact-item"><i>📧</i> Email: info@skillhubsolutions.com</div>
                     <div class="contact-item"><i>📞</i> Phone: +1 4379834297</div>
                     <div class="contact-item"><i>📍</i> Location: Suite 301, 231 Oak Park Blvd<br>Oakville, ON</div>
+                    <div class="contact-item"><i>💼</i> LinkedIn: <a href="https://ca.linkedin.com/company/skillhub-solutions" target="_blank" rel="noopener noreferrer">Follow us here</a></div>
                 </div>
                 
                 <div class="contact-form">
@@ -510,7 +528,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Skillhub Solutions. All rights reserved.</p>
+            <p>&copy; 2026 Skillhub Solutions. All rights reserved. | <a href="https://ca.linkedin.com/company/skillhub-solutions" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></p>
         </div>
     </footer>
 
